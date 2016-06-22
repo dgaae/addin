@@ -69,4 +69,4 @@ addin/README*
 addin/_rels/
 addin/package/
 *.xml
-DGAAE_[1].*
+DGAAE_[1-9]*.*
