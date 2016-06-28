@@ -61,10 +61,5 @@ target/
 #Ipython Notebook
 .ipynb_checkpoints
 
-addin/Images/
 addin/Install/
-addin/config*
-addin/makeaddin*
-addin/README*
-*.xml
 DGAAE_[1-9]*.*

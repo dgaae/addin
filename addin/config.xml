@@ -1,0 +1,30 @@
+<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><Name>DGAAE</Name><AddInID>{220f92a3-8423-4931-99ee-fe64f51378a1}</AddInID><Description>Direcci&#243;n General Adjunta de An&#225;lisis Espacial</Description><Version>1.0.3</Version><Image>Images\Sedesol-600x465.png</Image><Author>arturo.trujillo@sedesol.gob.mx</Author><Company>SEDESOL</Company><Date>06/28/2016</Date><Targets><Target name="Desktop" version="10.2" /></Targets><AddIn language="PYTHON" library="__init__.py" namespace="__init__"><ArcMap>
+    <Commands>
+        <Button caption="About" category="DGAAE" class="about" id="DGAAE_addin.abt" image="Images\HelpSystemBlue16.png" message="Informaci&#243;n de versiones y estado del proyecto" tip="Acerca de"><Help heading="" /></Button>
+        <Button caption="CALCULAR" category="DGAAE" class="Equiv" id="DGAAE_addin.calc_eqv" image="" message="Calcula las equivalencias en un mes en especifico" tip="Calcular Equivalencias"><Help heading="" /></Button>
+        <Button caption="ACTUALIZAR" category="DGAAE" class="Act_Equiv" id="DGAAE_addin.acteqv" image="" message="A&#241;ade el mes actual a las opciones" tip="Actualiza Equivalencias"><Help heading="" /></Button>
+        <Button caption="ESTANDARIZA" category="DGAAE" class="Estandariza_cenfemul" id="DGAAE_addin.est_cen" image="" message="" tip=""><Help heading="" /></Button>
+        <Button caption="PROCESO COORD" category="DGAAE" class="Coord" id="DGAAE_addin.coord" image="" message="" tip=""><Help heading="" /></Button>
+        <Button caption="PROCESO CAT. LOC." category="DGAAE" class="CAT_LOC" id="DGAAE_addin.catloc" image="" message="" tip=""><Help heading="" /></Button>
+        <Button caption="PROCESO SIIPSO" category="DGAAE" class="SIIPSO" id="DGAAE_addin.siipso" image="" message="" tip=""><Help heading="" /></Button>
+        <Button caption="PUB" category="DGAAE" class="PUB" id="DGAAE_addin.p_pub" image="" message="" tip=""><Help heading="" /></Button>
+        <Button caption="SEDESOL" category="DGAAE" class="Pre_SEDESOL" id="DGAAE_addin.p_sedesol" image="" message="" tip=""><Help heading="" /></Button>
+        <Button caption="TXT2DBF" category="DGAAE" class="txt2dbf" id="DGAAE_addin.t2d" image="" message="" tip=""><Help heading="" /></Button>
+        </Commands>
+    <Extensions>
+        <Extension autoLoad="true" category="DGAAE" class="Extension" description="Extension DGAAE" id="DGAAE_addin.extension" name="DGAAE" productName="DGAAE" showInExtensionDialog="true" />
+        </Extensions>
+    <Toolbars>
+        <Toolbar caption="DGAAE" category="DGAAE" id="DGAAE_addin.toolbar" showInitially="true"><Items><Button refID="DGAAE_addin.abt" /><Menu refID="DGAAE_addin.procesos" /><Menu refID="DGAAE_addin.menu" /></Items></Toolbar>
+        </Toolbars>
+    <Menus>
+        <Menu caption="EQUIVALENCIAS" category="DGAAE" id="DGAAE_addin.equivalencias" isRootMenu="false" isShortcutMenu="false" separator="false"><Items><Button refID="DGAAE_addin.calc_eqv" /><Button refID="DGAAE_addin.acteqv" /></Items></Menu>
+        <Menu caption="CENFEMUL" category="DGAAE" id="DGAAE_addin.denfemul" isRootMenu="false" isShortcutMenu="false" separator="false"><Items><Button refID="DGAAE_addin.est_cen" /><Button refID="DGAAE_addin.coord" /><Button refID="DGAAE_addin.catloc" /><Button refID="DGAAE_addin.siipso" /></Items></Menu>
+        <Menu caption="SEPOMEX" category="DGAAE" id="DGAAE_addin.sepomex" isRootMenu="false" isShortcutMenu="false" separator="false"><Items /></Menu>
+        <Menu caption="DISP. M&#211;VILES" category="DGAAE" id="DGAAE_addin.dp" isRootMenu="false" isShortcutMenu="false" separator="false"><Items /></Menu>
+        <Menu caption="I. SOCIAL" category="DGAAE" id="DGAAE_addin.is" isRootMenu="false" isShortcutMenu="false" separator="false"><Items /></Menu>
+        <Menu caption="PRESENCIA" category="DGAAE" id="DGAAE_addin.presencia" isRootMenu="false" isShortcutMenu="false" separator="false"><Items><Button refID="DGAAE_addin.p_pub" /><Button refID="DGAAE_addin.p_sedesol" /></Items></Menu>
+        <Menu caption="Procesos" category="DGAAE" id="DGAAE_addin.procesos" isRootMenu="false" isShortcutMenu="false" separator="false"><Items><Menu refID="DGAAE_addin.equivalencias" /><Menu refID="DGAAE_addin.denfemul" /><Menu refID="DGAAE_addin.sepomex" /><Menu refID="DGAAE_addin.dp" /><Menu refID="DGAAE_addin.is" /><Menu refID="DGAAE_addin.presencia" /></Items></Menu>
+        <Menu caption="Herramientas" category="DGAAE" id="DGAAE_addin.menu" isRootMenu="false" isShortcutMenu="false" separator="false"><Items><Button refID="DGAAE_addin.t2d" /></Items></Menu>
+        </Menus>
+    </ArcMap></AddIn></ESRI.Configuration>
