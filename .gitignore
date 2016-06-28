@@ -66,7 +66,5 @@ addin/Install/
 addin/config*
 addin/makeaddin*
 addin/README*
-addin/_rels/
-addin/package/
 *.xml
 DGAAE_[1-9]*.*
